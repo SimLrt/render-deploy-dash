@@ -9,7 +9,8 @@ app = Dash(__name__,
 server = app.server
 
 sidebar = html.Div([
-    html.Img(src='assets/img/logo.png', className="logo"),
+    html.Img(
+        src='assets/img/logo.png', className="logo"),
     html.Hr(),
             getattr(dbc, "Nav")([
                 getattr(dbc, "NavLink")(
